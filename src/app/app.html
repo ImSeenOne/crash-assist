@@ -1,0 +1,26 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar >
+      <ion-title>Paginas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="abrirPagina(home)">
+        home
+      </button>
+
+      <button ion-item (click)="abrirPagina(tabs)">
+        tabs
+      </button>
+
+      <button ion-item (click)="abrirPagina(ajustes2)">
+        ajustes
+      </button>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content></ion-nav>

@@ -1,0 +1,29 @@
+<!--
+  Generated template for the PrincipalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>CRASH ASSIST </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding backgroundcolor="primary">
+  <button ion-button
+      color="primary"
+      block
+      (click)="navegarPagina()">
+      Reportar un accidente
+  </button>
+
+  <button ion-button
+      color="primary"
+      block
+      [navPush]="pagina2">
+      Numero de emergencias
+  </button>
+</ion-content>
