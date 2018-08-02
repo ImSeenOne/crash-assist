@@ -14,10 +14,10 @@ export class MyApp {
   tabs = TabsPage;
   ajustes2 = Ajustes2Page;
   home =  PrincipalPage;
-  
+
   rootPage:any = PrincipalPage;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, menuCtrl: MenuController) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
