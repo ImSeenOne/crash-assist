@@ -3,7 +3,7 @@ import { Platform, MenuController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { PrincipalPage,Ajustes2Page, TabsPage } from '../pages/index.pages';
+import { PrincipalPage,Ajustes2Page, TabsPage, LoginPage } from '../pages/index.pages';
 
 
 
@@ -11,6 +11,7 @@ import { PrincipalPage,Ajustes2Page, TabsPage } from '../pages/index.pages';
   templateUrl: 'app.html'
 })
 export class MyApp {
+  login = LoginPage;
   tabs = TabsPage;
   ajustes2 = Ajustes2Page;
   home =  PrincipalPage;

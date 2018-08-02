@@ -14,7 +14,9 @@ import {
   Ajustes2Page,
   TabsPage,
   ModalPage,
-  EmergenciasPage
+  EmergenciasPage,
+  LoginPage,
+  Pagina4Page
 } from '../pages/index.pages';
 
 
@@ -28,7 +30,9 @@ import {
     Ajustes2Page,
     TabsPage,
     ModalPage,
-    EmergenciasPage
+    EmergenciasPage,
+    LoginPage,
+    Pagina4Page
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,9 @@ import {
     Ajustes2Page,
     TabsPage,
     ModalPage,
-    EmergenciasPage
+    EmergenciasPage,
+    LoginPage,
+    Pagina4Page
   ],
   providers: [
     StatusBar,

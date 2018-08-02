@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams AlertController } from 'ionic-angular';
 
-import {Pagina3Page,PrincipalPage} from '../index.pages';
+import {Pagina3Page,PrincipalPage, Pagina4Page} from '../index.pages';
 
 @IonicPage()
 @Component({
@@ -56,7 +56,9 @@ export class Pagina2Page {
     });
     alert.present();
   }
-
+  irPagina4(){
+    this.navCtrl.push(Pagina4Page);
+  }
 
 
 }
