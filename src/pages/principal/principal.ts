@@ -16,8 +16,6 @@ export class PrincipalPage {
   // emer:any = EmergenciasPage;
   // pagina2:any = Pagina2Page;
 
-  constructor(public navCtrl: NavController,  public navParams: NavParams) {}
-
   navegarPagina(){
     this.navCtrl.push(Pagina2Page);
   }
