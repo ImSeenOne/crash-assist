@@ -16,7 +16,8 @@ import {
   ModalPage,
   EmergenciasPage,
   LoginPage,
-  Pagina4Page
+  Pagina4Page,
+  FormularioUsuarioPage
 } from '../pages/index.pages';
 
 
@@ -32,7 +33,8 @@ import {
     ModalPage,
     EmergenciasPage,
     LoginPage,
-    Pagina4Page
+    Pagina4Page,
+    FormularioUsuarioPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import {
     ModalPage,
     EmergenciasPage,
     LoginPage,
-    Pagina4Page
+    Pagina4Page,
+    FormularioUsuarioPage
   ],
   providers: [
     StatusBar,

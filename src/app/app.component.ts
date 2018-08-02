@@ -3,7 +3,7 @@ import { Platform, MenuController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { PrincipalPage,Ajustes2Page, TabsPage, LoginPage } from '../pages/index.pages';
+import { PrincipalPage,Ajustes2Page, TabsPage, LoginPage, FormularioUsuarioPage } from '../pages/index.pages';
 
 
 
@@ -15,7 +15,7 @@ export class MyApp {
   tabs = TabsPage;
   ajustes2 = Ajustes2Page;
   home =  PrincipalPage;
-
+  formulario = FormularioUsuarioPage;
   rootPage:any = PrincipalPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private menuCtrl: MenuController) {
