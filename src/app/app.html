@@ -1,27 +1,64 @@
+  <div class="menu">
 <ion-menu [content]="content">
   <ion-header>
     <ion-toolbar color="primary">
       <ion-title>Nombre de usuario</ion-title>
-      <label color="letter" for="">Plan de usuario aqui</label>
+      <label color="letter" for="">Tipo de plan (agregar)</label>
     </ion-toolbar>
   </ion-header>
 
+
   <ion-content>
     <ion-list>
-      <button ion-item (click)="abrirPagina(home)">
-        home
-      </button>
 
-      <button ion-item (click)="abrirPagina(tabs)">
-        tabs
+      <!-- <button ion-item (click)="abrirPagina(home)">
+        HOME
+      </button> -->
+      <button ion-button
+          block
+          color="tercy"
+          (click)="abrirPagina(home)">
+          HOME
+        </button>
+
+        <button ion-button
+            block
+              color="tercy"
+          (click)="abrirPagina(tabs)">
+            Hablar con asesor
+          </button>
+
+          <button ion-button
+              block
+                color="tercy"
+            (click)="abrirPagina(ajustes2)">
+            ¿Como funciona?
+            </button>
+
+            <button ion-button
+                block
+                  color="tercy"
+                (click)="abrirPagina(ajustes2)">
+                ¡Mejorar mi plan!
+              </button>
+
+      <!-- <button ion-item (click)="abrirPagina(tabs)">
+        Hablar con un asesor
       </button>
 
       <button ion-item (click)="abrirPagina(ajustes2)">
-        ajustes
+        ¿Como funciona?
       </button>
 
+      <button ion-item (click)="abrirPagina(ajustes2)">
+      ¡Mejorar mi plan!
+      </button> -->
+
     </ion-list>
+
   </ion-content>
+
 </ion-menu>
 
 <ion-nav [root]="rootPage" #content></ion-nav>
+</div>
