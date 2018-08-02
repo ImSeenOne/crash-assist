@@ -32,10 +32,6 @@ export class EmergenciasPageModule {
     {
       nombre:"Denuncia anonima",
       numero:"numero pro"
-=======
-      nombre:"Denuncia anonima",
-      numero:"numero pro"
->>>>>>> 83e2ae12c33709360e37ca81cef11f66034f6339
     }
   ];
 
