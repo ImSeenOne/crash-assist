@@ -30,9 +30,8 @@ export class EmergenciasPageModule {
       numero:"Fallo mecanico"
     },
     {
-<<<<<<< HEAD
-      nombre:"Denuncio anonima",
-      numero:"Tu culop"
+      nombre:"Denuncia anonima",
+      numero:"numero pro"
 =======
       nombre:"Denuncia anonima",
       numero:"numero pro"
