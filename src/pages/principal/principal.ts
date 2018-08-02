@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import {Pagina2Page,EmergenciasPage} from "../index.pages";
 
@@ -9,15 +9,16 @@ import {Pagina2Page,EmergenciasPage} from "../index.pages";
   templateUrl: 'principal.html',
 })
 export class PrincipalPage {
-  emergencia:any = EmergenciasPage;
-  pagina2:any = Pagina2Page;
-  constructor(public navCtrl: NavController) {}
+  // emer:any = EmergenciasPage;
+  // pagina2:any = Pagina2Page;
+
+  constructor(public navCtrl: NavController,  public navParams: NavParams) {}
 
   navegarPagina(){
     this.navCtrl.push(Pagina2Page);
   }
   navegarNumeros(){
-    this.navCtrl.push(emergencia);
+    this.navCtrl.push(EmergenciasPage);
   }
 
 }
