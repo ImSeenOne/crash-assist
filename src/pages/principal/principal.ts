@@ -16,5 +16,8 @@ export class PrincipalPage {
   navegarPagina(){
     this.navCtrl.push(Pagina2Page);
   }
+  navegarNumeros(){
+    this.navCtrl.push(emergencia);
+  }
 
 }
