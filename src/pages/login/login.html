@@ -1,22 +1,20 @@
 <ion-header>
 
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-
-    <ion-title>
-      Events
-    </ion-title>
+  <ion-navbar color="primary">
+    <button ion-button icon-only
+            menuToggle
+            (click)="mostrarMenu()">
+            <ion-icon name="menu"></ion-icon>
+     </button>
+     <ion-title>Login</ion-title>
+     <ion-buttons end>
+     </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content>
 
-  <h3 margin-left>Login</h3>
-  <p margin>Click the login button to use the credentials below. Then, toggle the menu to see the menu items change.</p>
 
   <ion-list no-margin>
     <ion-item>

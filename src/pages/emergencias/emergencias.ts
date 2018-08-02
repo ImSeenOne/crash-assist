@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the EmergenciasPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -24,16 +18,20 @@ export class EmergenciasPage {
       num:"040"
     },
     {
-      nombre:"Radio Patrullas",
-      num:"Choque con otro vehiculo"
+      nombre:"Policia, Emergencia",
+      num:"060"
     },
     {
       nombre:"Bomberos",
-      num:"Fallo mecanico"
+      num:"068"
     },
     {
-      nombre:"Denuncia anonima",
-      num:"numero pro"
+      nombre:"Policia Federal",
+      num:"088"
+    },
+    {
+      nombre:"Cruz Roja",
+      num:"065"
     }
   ];
 

@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams} from 'ionic-angular';
+import { IonicPage, NavController, NavParams,MenuController} from 'ionic-angular';
 
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @IonicPage()
 @Component({
@@ -19,10 +14,13 @@ export class LoginPage {
     username: 'admin'
   };
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public menuCtrl:MenuController) {
 }
 
   login() {
     //this.events.publish('user:login');
+  }
+  mostrarMenu(){
+    this.menuCtrl.toggle();
   }
 }
