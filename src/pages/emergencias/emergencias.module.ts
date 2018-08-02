@@ -30,8 +30,13 @@ export class EmergenciasPageModule {
       numero:"Fallo mecanico"
     },
     {
+<<<<<<< HEAD
       nombre:"Denuncio anonima",
       numero:"Tu culop"
+=======
+      nombre:"Denuncia anonima",
+      numero:"numero pro"
+>>>>>>> 83e2ae12c33709360e37ca81cef11f66034f6339
     }
   ];
 
