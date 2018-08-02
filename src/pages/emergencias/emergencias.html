@@ -15,11 +15,12 @@
 
 <ion-content padding>
 
-  <ion-list>
-    <ion-item *ngFor="let numero of numeros">
+  <ion-list *ngFor="let numero of numeros">
+    <ion-item >
       {{ numero.nombre }}
+
     </ion-item>
-    <ion-item *ngFor="let numero of numeros">
+    <ion-item >
       {{ numero.num }}
     </ion-item>
   </ion-list>
