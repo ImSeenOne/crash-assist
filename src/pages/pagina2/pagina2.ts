@@ -48,7 +48,7 @@ export class Pagina2Page {
       buttons: [{
         text:'Aceptar',
         handler:() => {
-  
+
 
             this.navCtrl.popToRoot();
 
