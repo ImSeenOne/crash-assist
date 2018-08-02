@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams AlertController } from 'ionic-angular';
 
-import {Pagina3Page,Pagina2Page,PrincipalPage} from '../index.pages';
+import {Pagina3Page,PrincipalPage} from '../index.pages';
 
 @IonicPage()
 @Component({
@@ -10,7 +10,6 @@ import {Pagina3Page,Pagina2Page,PrincipalPage} from '../index.pages';
 })
 export class Pagina2Page {
   pagina3:any = Pagina3Page;
-  pagina2:any = Pagina2Page;
   pagina1:any = PrincipalPage;
   mutantes:any[] = [
     {

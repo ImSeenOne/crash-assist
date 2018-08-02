@@ -5,3 +5,4 @@ export{AjustesPage} from "./ajustes/ajustes";
 export{Ajustes2Page} from "./ajustes2/ajustes2";
 export{TabsPage} from "./tabs/tabs";
 export{ModalPage} from "./modal/modal";
+export{EmergenciasPage} from "./emergencias/emergencias";

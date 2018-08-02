@@ -14,6 +14,28 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'emergencias.html',
 })
 export class EmergenciasPage {
+  numeros:any[] = [
+    {
+      nombre:"Num. Nacional",
+      num:"911"
+    },
+    {
+      nombre:"Informacion General",
+      num:"040"
+    },
+    {
+      nombre:"Radio Patrullas",
+      num:"Choque con otro vehiculo"
+    },
+    {
+      nombre:"Bomberos",
+      num:"Fallo mecanico"
+    },
+    {
+      nombre:"Denuncia anonima",
+      num:"numero pro"
+    }
+  ];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
