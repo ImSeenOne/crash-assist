@@ -17,11 +17,8 @@ export class MyApp {
 
   rootPage:any = PrincipalPage;
 
-<<<<<<< HEAD
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, menuCtrl: MenuController) {
-=======
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private menuCtrl: MenuController) {
->>>>>>> 9ac3f3206e962c44624bbfea6fe6fdd84010c2de
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
