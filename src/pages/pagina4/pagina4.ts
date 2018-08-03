@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
-/**
- * Generated class for the Pagina4Page page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { Geolocation, Geoposition } from '@ionic-native/geolocation';
+import { LoadingController, Loading } from 'ionic-angular';
+
+ declare var google;
+
 
 @IonicPage()
 @Component({
@@ -13,8 +12,11 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
   templateUrl: 'pagina4.html',
 })
 export class Pagina4Page {
+  map: any;
+  loading: Loading;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private alertCtrl:AlertController,private geolocation:Geolocation,
+  private loadCtrl: LoadingController) {
   }
 
   ionViewDidLoad() {
@@ -28,17 +30,60 @@ export class Pagina4Page {
       buttons: [{
         text:'Aceptar',
         handler:() => {
-
-
             this.navCtrl.popToRoot();
-
           }
       }]
     });
     alert.present();
 }
 
+
   navegarPagina(){
     this.navCtrl.push(Pagina4Page);
   }
+
+  ionViewDidLoad(){
+      this.loading = this.loadCtrl.create();
+      this.loading.present();
+      this.getPosition();
+    }
+    getPosition(): void{
+        this.geolocation.getCurrentPosition()
+        .then(response => {
+          this.loadMap(response);
+        })
+        .catch(error =>{
+          console.log(error);
+          this.loading.dismiss();
+        })
+      }
+
+      loadMap(position: Geoposition){
+        let latitude = position.coords.latitude;
+        let longitude = position.coords.longitude;
+        console.log(latitude, longitude);
+
+        // create a new map by passing HTMLElement
+        let mapEle: HTMLElement = document.getElementById('map');
+
+        // create LatLng object
+        let myLatLng = {lat: latitude, lng: longitude};
+
+        // create map
+        this.map = new google.maps.Map(mapEle, {
+          center: myLatLng,
+          zoom: 14
+        });
+
+        google.maps.event.addListenerOnce(this.map, 'idle', () => {
+          this.loading.dismiss();
+          let marker = new google.maps.Marker({
+            position: myLatLng,
+            map: this.map,
+            title: 'Hello World!'
+          });
+          marker;
+          mapEle.classList.add('show-map');
+        });
+      }
 }
