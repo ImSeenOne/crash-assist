@@ -1,14 +1,7 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <button ion-button icon-only
-            menuToggle
-            (click)="mostrarMenu()">
-            <ion-icon name="menu"></ion-icon>
-     </button>
      <ion-title>Login</ion-title>
-     <ion-buttons end>
-     </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -28,8 +21,9 @@
   </ion-list>
 
   <div padding>
-    <button ion-button block (click)="login()">Login</button>
-    <button ion-button block color="secondary" menuToggle>Toggle Menu</button>
+    <button ion-button block (click)="abrirPagina(principal)">Login</button>
+    <button ion-button block color="secondary">Iniciar secion con Facebook</button>
+    <button ion-button block color="secondary">Iniciar secion con Google</button>
   </div>
 
 </ion-content>
