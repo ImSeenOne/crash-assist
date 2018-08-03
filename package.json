@@ -29,7 +29,9 @@
     "hoek": "^5.0.3",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
-    "rxjs": "5.5.11",
+    "promise-polyfill": "^8.0.0",
+    "rxjs": "^6.2.2",
+    "rxjs-compat": "^6.2.2",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.26"
   },
@@ -40,7 +42,13 @@
   "description": "An Ionic project",
   "cordova": {
     "plugins": {
+<<<<<<< HEAD
       "cordova-plugin-geolocation": {}
+=======
+      "cordova-plugin-geolocation": {
+        "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
+      }
+>>>>>>> d57a78d4ea273a5643cfdf954ca05a54c273286a
     }
   }
 }

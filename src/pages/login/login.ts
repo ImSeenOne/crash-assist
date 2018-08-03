@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams,MenuController} from 'ionic-angular';
+import { IonicPage, NavController, NavParams} from 'ionic-angular';
+import { PrincipalPage } from '../index.pages';
+
 
 
 
@@ -9,18 +11,18 @@ import { IonicPage, NavController, NavParams,MenuController} from 'ionic-angular
   templateUrl: 'login.html'
 })
 export class LoginPage {
+  principal = PrincipalPage;
   user = {
     name: 'Administrator',
     username: 'admin'
   };
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public menuCtrl:MenuController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,) {
 }
 
-  login() {
-    //this.events.publish('user:login');
-  }
-  mostrarMenu(){
-    this.menuCtrl.toggle();
-  }
+abrirPagina(pagina:any){
+  //this.rootPage = pagina;
+  this.navCtrl.setRoot(PrincipalPage);
+}
+
 }
