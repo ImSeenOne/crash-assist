@@ -20,6 +20,15 @@ import {
   FormularioUsuarioPage
 } from '../pages/index.pages';
 
+export const firebaseConfig = {
+  apiKey: "AIzaSyCAIFTqgoOwxDbm1dT0uqFJCwBmcoFS0xk",
+    authDomain: "crash-assist.firebaseapp.com",
+    databaseURL: "https://crash-assist.firebaseio.com",
+    projectId: "crash-assist",
+    storageBucket: "crash-assist.appspot.com",
+    messagingSenderId: "686941476520"
+};
+
 
 @NgModule({
   declarations: [
@@ -38,7 +47,10 @@ import {
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -58,6 +70,7 @@ import {
   providers: [
     StatusBar,
     SplashScreen,
+    AngularFireDatabase,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
