@@ -72,11 +72,8 @@ export const firebaseConfig = {
   providers: [
     StatusBar,
     SplashScreen,
-<<<<<<< HEAD
     Geolocation,
-=======
     AngularFireDatabase,
->>>>>>> d57a78d4ea273a5643cfdf954ca05a54c273286a
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
