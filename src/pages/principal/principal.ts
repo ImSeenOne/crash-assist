@@ -3,8 +3,6 @@ import { IonicPage, NavController, MenuController } from 'ionic-angular';
 import {Pagina2Page,EmergenciasPage} from "../index.pages";
 import { Geolocation, Geoposition } from '@ionic-native/geolocation';
 import { LoadingController, Loading } from 'ionic-angular';
-import { AngularFireDatabase } from 'angularfire2/database';
-import { Observable } from 'rxjs/Observable';
 
 declare var google;
 
@@ -22,7 +20,7 @@ export class PrincipalPage {
   pagina2:any = Pagina2Page;
   constructor(public navCtrl: NavController,
               private menuCtrl: MenuController,
-              afDB: AngularFireDatabase,private geolocation: Geolocation,
+              private geolocation: Geolocation,
                             private loadCtrl: LoadingController) {
                 this.items = afDB.list('cuisines').valueChanges();
               }
