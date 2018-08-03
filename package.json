@@ -25,6 +25,7 @@
     "@ionic-native/splash-screen": "~4.10.0",
     "@ionic-native/status-bar": "~4.10.0",
     "@ionic/storage": "2.1.3",
+    "browserslist": "^4.0.1",
     "cordova-plugin-geolocation": "^4.0.1",
     "hoek": "^5.0.3",
     "ionic-angular": "3.9.2",
@@ -42,13 +43,9 @@
   "description": "An Ionic project",
   "cordova": {
     "plugins": {
-<<<<<<< HEAD
-      "cordova-plugin-geolocation": {}
-=======
       "cordova-plugin-geolocation": {
         "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
       }
->>>>>>> d57a78d4ea273a5643cfdf954ca05a54c273286a
     }
   }
 }
