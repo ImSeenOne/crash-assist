@@ -19,10 +19,6 @@ export class Pagina4Page {
   private loadCtrl: LoadingController) {
   }
 
-  /*ionViewDidLoad() {
-    console.log('ionViewDidLoad Pagina4Page');
-  }*/
-
   presentAlert() {
     let alert = this.alertCtrl.create({
       title: '¡Estamos en camino!',

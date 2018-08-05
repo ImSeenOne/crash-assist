@@ -1,72 +1,41 @@
   <div class="menu">
 <ion-menu [content]="content">
   <ion-header>
-    <ion-toolbar color="primary">
-      <ion-title>Nombre de usuario</ion-title>
-      <label color="letter" for="">Tipo de plan (agregar)</label>
+    <ion-toolbar color="light">
+      <ion-title>{{user.email}}</ion-title> <br>
+      <ion-title>Plan standard</ion-title>
+      <!-- <label color="white" for="">Plan standard</label> -->
     </ion-toolbar>
   </ion-header>
 
 
   <ion-content>
     <ion-list>
-
-      <!-- <button ion-item (click)="abrirPagina(home)">
-        HOME
-      </button> -->
-      <button ion-button
-          block
-          color="tercy"
+      <button ion-item
           (click)="abrirPagina(home)">
-          HOME
+          Inicio
         </button>
 
 
-          <button ion-button
-              block
-                color="tercy"
+          <button ion-item
             (click)="abrirPagina(ajustes2)">
-            ¿Como funciona?
+            ¿Cómo funciona?
             </button>
 
-            <button ion-button
-                block
-                  color="tercy"
+            <button ion-item
                 (click)="abrirPagina(ajustes2)">
                 ¡Mejorar mi plan!
               </button>
 
-      <!-- <button ion-item (click)="abrirPagina(tabs)">
-        Hablar con un asesor
-      </button>
-      -->
-
-    <button ion-button
-          block
-          color="tercy"
-        (click)="abrirPagina(login)">
-        Login
-      </button>
-
-      <button ion-button
-            block
-            color="tercy"
-          (click)="abrirPagina(formulario)">
-          Registro
-        </button>
-
-        <button ion-button
-              block
-              color="tercy"
-            (click)="cerrar()">
-            Cerrar Secion
+          <button ion-item (click)="abrirPagina(tabs)">
+            Hablar con un asesor
           </button>
 
 
-<!--      <button ion-item (click)="abrirPagina(formulario)">
-        registro
-      </button>
->>>>>>> c45a4c9cc6474bb1f6cfaee2afd01b2f345adf16  -->
+        <button ion-item
+            (click)="cerrar()">
+            Cerrar Sesión
+          </button>
 
     </ion-list>
 
