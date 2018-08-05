@@ -21,8 +21,7 @@ export class PrincipalPage {
   constructor(public navCtrl: NavController,
               private menuCtrl: MenuController,
               private geolocation: Geolocation,
-                            private loadCtrl: LoadingController) {
-                this.items = afDB.list('cuisines').valueChanges();
+              private loadCtrl: LoadingController) {
               }
 
   // emer:any = EmergenciasPage;
