@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Geolocation } from '@ionic-native/geolocation';
+import { AngularFireModule } from "angularfire2";
 
 import {
   PrincipalPage,
@@ -40,7 +41,8 @@ import {
   imports: [
     BrowserModule,
     HttpClientModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
