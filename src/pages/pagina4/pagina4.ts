@@ -19,9 +19,9 @@ export class Pagina4Page {
   private loadCtrl: LoadingController) {
   }
 
-  ionViewDidLoad() {
+  /*ionViewDidLoad() {
     console.log('ionViewDidLoad Pagina4Page');
-  }
+  }*/
 
   presentAlert() {
     let alert = this.alertCtrl.create({
