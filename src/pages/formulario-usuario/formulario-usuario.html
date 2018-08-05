@@ -1,12 +1,7 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <button ion-button icon-only
-            menuToggle
-            (click)="mostrarMenu()">
-            <ion-icon name="menu"></ion-icon>
-     </button>
-     <ion-title>Formulario</ion-title>
+     <ion-title>Crash Assist - Registro</ion-title>
      <ion-buttons end>
      </ion-buttons>
   </ion-navbar>
@@ -18,38 +13,16 @@
 
   <ion-list>
     <ion-item>
-      <ion-label color="primary" floating>Nombre</ion-label>
-      <ion-input></ion-input>
+      <ion-label floating color="primary">Email</ion-label>
+      <ion-input type="text" [(ngModel)]="user.email" ></ion-input>
     </ion-item>
-
     <ion-item>
-      <ion-label color="primary" floating>Correo</ion-label>
-      <ion-input type="email"></ion-input>
+      <ion-label floating color="primary">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password"  ></ion-input>
     </ion-item>
-
-    <ion-item>
-      <ion-label color="primary" floating>Confirmar Correo</ion-label>
-      <ion-input type="email"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label color="primary" floating>Contraseña</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label color="primary" floating>Confirmar Contraseña</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label color="primary" floating>Nombre de usuario</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <button ion-button>Registrarse</button>
-    </ion-item>
-
   </ion-list>
+
+  <ion-item>
+    <button ion-button (click) = "register(user)" >Registrarse</button>
+  </ion-item>
 </ion-content>

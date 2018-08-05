@@ -15,8 +15,6 @@ declare var google;
 export class PrincipalPage {
    map: any;
   loading: Loading;
-
-  items: Observable<any[]>;
   pagina2:any = Pagina2Page;
   constructor(public navCtrl: NavController,
               private menuCtrl: MenuController,

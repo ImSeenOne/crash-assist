@@ -7,6 +7,10 @@ import { MyApp } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Geolocation } from '@ionic-native/geolocation';
 import { AngularFireModule } from "angularfire2";
+import { FIREBASE_CONFIG } from "./app.firebase.config";
+import { AngularFireAuthModule } from "angularfire2/auth"
+
+
 
 import {
   PrincipalPage,
@@ -21,6 +25,8 @@ import {
   Pagina4Page,
   FormularioUsuarioPage
 } from '../pages/index.pages';
+
+
 
 
 @NgModule({
@@ -42,7 +48,8 @@ import {
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
-    AngularFireModule
+    AngularFireModule.initializeApp(FIREBASE_CONFIG),
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
