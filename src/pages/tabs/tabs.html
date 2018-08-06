@@ -1,18 +1,35 @@
 <ion-header>
 
-  <ion-navbar color="primary">
-    <button ion-button icon-only
-            menuToggle>
+    <ion-navbar color="primary">
+        <button ion-button icon-only menuToggle>
             <ion-icon name="menu"></ion-icon>
      </button>
-     <ion-title>hablar con un asesor</ion-title>
-     <ion-buttons end>
-     </ion-buttons>
-  </ion-navbar>
+        <ion-title>hablar con un asesor</ion-title>
+        <ion-input placeholder="¿Quien eres?"></ion-input>
+        <ion-buttons end>
+        </ion-buttons>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+    <ion-card *ngFor="let message of messages">
+        <ion-card-header>
+            {{message.nombre}} Dice:
+        </ion-card-header>
+        <ion-card-content>
+            {{message.mensaje}}
+        </ion-card-content>
+    </ion-card>
 </ion-content>
+
+<ion-footer>
+    <ion-input placeholder="Mensaje…"></ion-input>
+    <ion-buttons end>
+        <button>
+            Enviar
+            <ion-icon neme="send"></ion-icon>
+        </button>
+    </ion-buttons>
+</ion-footer>
